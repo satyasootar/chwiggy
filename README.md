@@ -11,7 +11,7 @@ This project serves as a comprehensive implementation of intermediate and advanc
 > [!NOTE]
 > **Video Demo:** Watch the video below to see the app's smooth animations, navigation flows, and interactive features.
 
-[![Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://github.com/user-attachments/assets/dee667c5-f0cd-465a-b83d-51388cdd61ba)
 *(Replace `YOUR_VIDEO_ID` with your actual YouTube or hosted video ID/link)*
 
 ---
@@ -19,15 +19,20 @@ This project serves as a comprehensive implementation of intermediate and advanc
 ## 📸 UI Showcase
 
 <div align="center">
-  <img src="https://via.placeholder.com/250x500/111111/FF7A00?text=Home+Screen" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Home Screen"/>
-  <img src="https://via.placeholder.com/250x500/111111/FF7A00?text=Restaurant+Menu" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Restaurant Menu"/>
-  <img src="https://via.placeholder.com/250x500/111111/FF7A00?text=Cart+Checkout" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Cart & Checkout"/>
+  <img src="https://github.com/user-attachments/assets/62b8f9dd-b614-473a-ad43-658af8220178" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Home Screen"/>
+  <img src="https://github.com/user-attachments/assets/29b52135-b61f-4793-bfcd-a385cac2c5ce" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Restaurant Menu"/>
+  <img src="https://github.com/user-attachments/assets/2c6895ac-4485-4821-8f9e-814143856019" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Cart & Checkout"/>
   
   <br/>
   
   <img src="https://via.placeholder.com/250x500/111111/FF7A00?text=Global+Search" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Global Search"/>
   <img src="https://via.placeholder.com/250x500/111111/FF7A00?text=Profile+Drawer" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Profile Drawer"/>
   <img src="https://via.placeholder.com/250x500/111111/FF7A00?text=Settings+%26+Help" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Settings & Help"/>
+  https://github.com/user-attachments/assets/0a88895c-0a0d-4020-8c2e-3cafc251c558
+  https://github.com/user-attachments/assets/3f8222e2-3dba-47c7-81bc-2b17cfacacdb
+  https://github.com/user-attachments/assets/0fcc2b65-28ce-4aff-8815-13b725611d87
+  https://github.com/user-attachments/assets/1b08f1ad-e326-4d04-9080-9df8e9e9ce2c
+  https://github.com/user-attachments/assets/adbf0ea7-0ec2-4a27-a117-764e2612977c
 </div>
 
 *(Replace the placeholder links above with direct paths to your actual `.png` screenshot files!)*
