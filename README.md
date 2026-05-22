@@ -11,8 +11,8 @@ This project serves as a comprehensive implementation of intermediate and advanc
 > [!NOTE]
 > **Video Demo:** Watch the video below to see the app's smooth animations, navigation flows, and interactive features.
 
-[![Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://github.com/user-attachments/assets/dee667c5-f0cd-465a-b83d-51388cdd61ba)
-*(Replace `YOUR_VIDEO_ID` with your actual YouTube or hosted video ID/link)*
+https://github.com/user-attachments/assets/dee667c5-f0cd-465a-b83d-51388cdd61ba
+
 
 ---
 
