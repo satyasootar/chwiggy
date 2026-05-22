@@ -25,14 +25,14 @@ This project serves as a comprehensive implementation of intermediate and advanc
   
   <br/>
   
-  <img src="https://via.placeholder.com/250x500/111111/FF7A00?text=Global+Search" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Global Search"/>
-  <img src="https://via.placeholder.com/250x500/111111/FF7A00?text=Profile+Drawer" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Profile Drawer"/>
-  <img src="https://via.placeholder.com/250x500/111111/FF7A00?text=Settings+%26+Help" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Settings & Help"/>
-  https://github.com/user-attachments/assets/0a88895c-0a0d-4020-8c2e-3cafc251c558
-  https://github.com/user-attachments/assets/3f8222e2-3dba-47c7-81bc-2b17cfacacdb
-  https://github.com/user-attachments/assets/0fcc2b65-28ce-4aff-8815-13b725611d87
-  https://github.com/user-attachments/assets/1b08f1ad-e326-4d04-9080-9df8e9e9ce2c
-  https://github.com/user-attachments/assets/adbf0ea7-0ec2-4a27-a117-764e2612977c
+  <img src="https://github.com/user-attachments/assets/0a88895c-0a0d-4020-8c2e-3cafc251c558" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Global Search"/>
+  <img src="https://github.com/user-attachments/assets/3f8222e2-3dba-47c7-81bc-2b17cfacacdb" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Profile Drawer"/>
+  <img src="https://github.com/user-attachments/assets/0fcc2b65-28ce-4aff-8815-13b725611d87" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Settings & Help"/>
+
+  <br/>
+
+  <img src="https://github.com/user-attachments/assets/1b08f1ad-e326-4d04-9080-9df8e9e9ce2c" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Extra Screen 1"/>
+  <img src="https://github.com/user-attachments/assets/adbf0ea7-0ec2-4a27-a117-764e2612977c" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Extra Screen 2"/>
 </div>
 
 *(Replace the placeholder links above with direct paths to your actual `.png` screenshot files!)*
