@@ -1,56 +1,131 @@
-# Welcome to your Expo app 👋
+# 🍔 Chwiggy - Premium Food Delivery App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A high-fidelity React Native mobile application built with **Expo SDK 55**, utilizing the modern **Expo Router** routing framework. 
 
-## Get started
+This project serves as a comprehensive implementation of intermediate and advanced mobile navigation architectures, focusing on nested routers, dynamic route parameter passing, custom native OS headers, dynamic tab badges, nested drawer overlays, and custom scheme deep linking. It is styled with a stunning dark-mode aesthetic featuring vibrant orange accents.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🎬 App Demo
 
-2. Start the app
+> [!NOTE]
+> **Video Demo:** Watch the video below to see the app's smooth animations, navigation flows, and interactive features.
 
-   ```bash
-   npx expo start
-   ```
+[![Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+*(Replace `YOUR_VIDEO_ID` with your actual YouTube or hosted video ID/link)*
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 📸 UI Showcase
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+<div align="center">
+  <img src="https://via.placeholder.com/250x500/111111/FF7A00?text=Home+Screen" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Home Screen"/>
+  <img src="https://via.placeholder.com/250x500/111111/FF7A00?text=Restaurant+Menu" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Restaurant Menu"/>
+  <img src="https://via.placeholder.com/250x500/111111/FF7A00?text=Cart+Checkout" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Cart & Checkout"/>
+  
+  <br/>
+  
+  <img src="https://via.placeholder.com/250x500/111111/FF7A00?text=Global+Search" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Global Search"/>
+  <img src="https://via.placeholder.com/250x500/111111/FF7A00?text=Profile+Drawer" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Profile Drawer"/>
+  <img src="https://via.placeholder.com/250x500/111111/FF7A00?text=Settings+%26+Help" width="250" style="margin: 10px; border-radius: 16px; border: 1px solid #333;" alt="Settings & Help"/>
+</div>
 
-## Get a fresh project
+*(Replace the placeholder links above with direct paths to your actual `.png` screenshot files!)*
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
+## 📱 Architecture & Data Model
+
+Chwiggy is designed with a reactive routing architecture where physical directory layouts govern route boundaries and screen access, coordinated dynamically by a central **Route Guard**.
+
+### Data Hierarchy
+The app realistically mimics a food delivery platform utilizing a **Restaurant → Menu → Food Item** model. 
+- The `Home` screen lists **Restaurants**.
+- Tapping a restaurant opens a **Menu View** (`restaurant/[id].tsx`), displaying specific **Food Items**.
+- Users add **Food Items** to their cart, and the app tracks both the food item details and the host restaurant.
+
+### Route Tree
+```text
+Root (src/app/_layout.tsx)
+ ├── (auth) Group (Stack Navigator) [Unauthenticated Flow]
+ │    ├── onboarding.tsx  (Welcome & Complete Onboarding State)
+ │    └── login.tsx       (Collect User Details & Sign In)
+ │
+ └── (app) Group (Stack Navigator) [Authenticated Flow]
+      ├── (tabs) Sibling (Bottom Tab Navigator)
+      │    ├── home (Stack Navigator)
+      │    │    └── index.tsx     (Restaurant Lists)
+      │    ├── search.tsx         (Global Food Search)
+      │    ├── orders.tsx         (Active Orders & Dynamic Cart Badge)
+      │    └── profile (Drawer Navigator Nested inside Tab)
+      │         ├── index.tsx     (Profile Dashboard)
+      │         ├── orders.tsx    (Order History log)
+      │         ├── settings.tsx  (Preferences Panel)
+      │         └── help.tsx      (FAQ & Support)
+      │
+      ├── restaurant/
+      │    └── [id].tsx           (Menu Screen - Hides Tab Bar!)
+      │
+      └── cart.tsx                (Checkout Screen - Hides Tab Bar!)
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-### Other setup steps
+## 🛠️ Technology Stack
+* **Framework**: React Native with [Expo SDK 55](https://docs.expo.dev/versions/v55.0.0/)
+* **Routing**: [Expo Router v3](https://docs.expo.dev/router/introduction/) (Built on React Navigation v7)
+* **Local Session Persistence**: [@react-native-async-storage/async-storage](https://react-native-async-storage.github.io/async-storage/)
+* **Icons**: `@expo/vector-icons` (Ionicons)
+* **Type Safety**: TypeScript
+* **Design & Styling**: Pure Vanilla React Native Stylesheets (Dark Mode)
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+---
 
-## Learn more
+## 🚀 Installation & Setup Guide
 
-To learn more about developing your project with Expo, look at the following resources:
+Follow these steps to get the app running on your local machine.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 1. Prerequisites
+Ensure you have **Node.js (v18+)** installed. Download the [Expo Go](https://expo.dev/go) app on your physical iOS/Android device, or configure local Android/iOS emulators.
 
-## Join the community
+### 2. Install Dependencies
+Clone the repository, navigate into the directory, and run:
+```bash
+npm install
+```
 
-Join our community of developers creating universal apps.
+### 3. Sync Native Storage Bridges
+Install the compatible native module wrapper for AsyncStorage using Expo:
+```bash
+npx expo install @react-native-async-storage/async-storage
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### 4. Start the Application
+Boot the Metro bundler with a clean cache:
+```bash
+npx expo start -c
+```
+- Press **`a`** to open on Android Emulator.
+- Press **`i`** to open on iOS Simulator.
+- **Scan the QR code** with your camera (iOS) or Expo Go app (Android) to test natively on a physical device.
+
+---
+
+## 🔗 Deep Linking & Routing
+
+Chwiggy supports custom URI schemes. Tapping a link formatted as `foodapp://restaurant/[id]` will immediately wake up the app and launch the designated Restaurant Menu screen!
+
+### Testing Deep Links on Emulator
+With your Expo dev server active, execute the following command in a new terminal:
+
+**For Android Emulator:**
+```bash
+npx uri-scheme open foodapp://restaurant/103 --android
+```
+
+**For iOS Simulator:**
+```bash
+npx uri-scheme open foodapp://restaurant/103 --ios
+```
+
+**Result:** The app will instantly open the **South Indian Express** menu directly, bypassing normal navigation flows!
